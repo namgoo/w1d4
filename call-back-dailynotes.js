@@ -29,7 +29,7 @@
 
 
 
-findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound); // Passing the function as a parameter or an argument, therefore I don't need function() because I am not calling this function on its own.
+// findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound); // Passing the function as a parameter or an argument, therefore I don't need function() because I am not calling this function on its own.
 
 
 console.log("ForEach")
@@ -48,3 +48,8 @@ function actionWhenFound(element, index, array) {
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
 
 
+var numbers = [1, 2, 3, 4, 5, 7, 10, 14, 17, 18];
+var evens = numbers.filter(function(number) {
+  return (number % 2 == 0);
+});
+console.log("Subset of even numbers:", evens);
