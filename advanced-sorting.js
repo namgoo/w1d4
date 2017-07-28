@@ -10,9 +10,9 @@ var students = [
   { id: 4, name: "alex",     age: 30 }
 ];
 
-students.sort(function(a,b) {
-  var nameA = a.name.toUpperCase(); // ignore upper and lowercase
-  var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+console.log(students.sort(function(a,b) {
+  var nameA = a.name.toLowerCase();
+  var nameB = b.name.toLowerCase();
   if (nameA < nameB) {
     return -1;
   }
@@ -21,15 +21,13 @@ students.sort(function(a,b) {
   }
   if (nameA === nameB) {
     if (a.age < b.age) {
-      return -1;
+      return -1
     }
-    else if (a.age > b.age) {
+    if (a.age > b.age) {
       return 1;
     }
-    else if (a.age === b.age){
+    if (a.age === b.age) {
       return 0;
+    }
   }
-  }
-})
-
-print(students)
+}))

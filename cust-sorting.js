@@ -21,3 +21,8 @@ function descending(a, b) {
 print(array.sort(ascending))
 print(array.sort(descending))
 
+var list = ['zwesome', 'abc', 'because', 'bc', 'dragoness', 'candy']
+
+print(list.sort())
+
+

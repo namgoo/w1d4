@@ -14,7 +14,9 @@ map(words, function(word) {
   return word.length;
 });
 
-
+console.log(words.map(function (x) {
+  return x.length
+}))
 
 
 
